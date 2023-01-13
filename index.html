@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tic Tac Toe Game with Sweets | Crimson</title>
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+
+	</head>
+
+	<body>
+
+		<svg viewBox="0 0 90 90" opacity="0">
+			<defs>
+		  <!--     <circle id="o" cx="15" cy="15" r="5" stroke="#000" fill="none"/> -->
+		  <!--     <path id="x" d="M9,9 21,21 M21,9 9,21" stroke="#000" fill="none"/> -->
+				<text id="o" x="15" y="24" text-anchor="middle" fill="#fff">🍩</text>
+				<text id="x" x="15" y="24" text-anchor="middle" fill="#fff">🥨</text>
+			</defs>
+			
+			<path d="M30,0 30,90 M60,0 60,90 M0,30 90,30 M0,60 90,60" fill="none" stroke="#000"/>
+			
+			<g class="boxes" fill="rgba(0,0,0,0.1)">
+			  <rect width="30" height="30"/>
+			  <rect x="30" y="0" width="30" height="30"/>
+			  <rect x="60" y="0" width="30" height="30"/>
+			  <rect x="0" y="30" width="30" height="30"/>
+			  <rect x="30" y="30" width="30" height="30"/>
+			  <rect x="60" y="30" width="30" height="30"/>
+			  <rect x="0" y="60" width="30" height="30"/>
+			  <rect x="30" y="60" width="30" height="30"/>
+			  <rect x="60" y="60" width="30" height="30"/>
+			</g>
+			
+			<g id="end">
+			  <rect width="90" height="90" fill="rgba(255,255,255,0.9)" />
+			  <text class="txt" x="45" y="38" text-anchor="middle"></text>
+			  <text class="txt" font-size="14" x="45" y="58" text-anchor="middle"></text>    
+			</g>
+		  </svg>
+
+		<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>		
+</html>
